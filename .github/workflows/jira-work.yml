@@ -3,7 +3,7 @@ name: Jira Issue Update Workflow
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   check-commit-message:
