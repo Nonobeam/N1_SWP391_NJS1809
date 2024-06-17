@@ -17,12 +17,13 @@ jobs:
         run: |
           COMMIT_MESSAGE=$(git log -1 --pretty=%B)
           echo "Commit message: $COMMIT_MESSAGE"
-          if [[ ! $COMMIT_MESSAGE =~ ^[A-Z]+[0-9]+ - .+$ ]]; then
+          if echo "$COMMIT_MESSAGE" | grep -Eq '^[A-Z]+[0-9]+ - .+$'; then
+            ISSUE_KEY=$(echo $COMMIT_MESSAGE | grep -oE '^[A-Z]+[0-9]+')
+            echo "::set-output name=issue_key::$ISSUE_KEY"
+          else
             echo "Commit message does not match the required format."
             exit 1
           fi
-          ISSUE_KEY=$(echo $COMMIT_MESSAGE | grep -oE '^[A-Z]+[0-9]+')
-          echo "::set-output name=issue_key::$ISSUE_KEY"
 
   run-tests:
     runs-on: ubuntu-latest
