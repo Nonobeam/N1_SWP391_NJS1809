@@ -15,8 +15,7 @@ The Dentistry Booking System is a comprehensive platform designed to streamline 
 - **Frontend (Vercel):** [Live Frontend](https://dentistry-booking-system-4jgo.vercel.app)
 
 ## Roles
-- **Bao Thu** (Backend) - [GitHub Profile](https://github.com/Rvt129)
-- **Minh Tuan** (Backend) - [GitHub Profile](https://github.com/Bobjohnd69)
-- **Huu Phuc** - [GitHub Profile](https://github.com/Nonobeam)
-- **Giang Nam** - [GitHub Profile](https://github.com/kinnamss)
-- **Khoa** - [GitHub Profile](https://github.com/khoacutemento)
+- **Huy**
+- **Anh Anh** 
+- **Huu Phuc** 
+- **Đức Mạnh** 
