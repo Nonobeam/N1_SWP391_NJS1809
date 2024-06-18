@@ -28,10 +28,12 @@ public class Dentist {
     @JoinColumn(name = "dentistID")
     private Client user;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "clinicID", nullable = false, referencedColumnName = "clinicID")
     private Clinic clinic;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "staffID", nullable = false, referencedColumnName = "staffID")
     private Staff staff;
@@ -48,6 +50,7 @@ public class Dentist {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "dentist")
     private List<Appointment> appointmentList;
 
+    @JsonIgnore
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "DentistService",
             joinColumns = @JoinColumn(name = "dentistID", referencedColumnName = "dentistID"),

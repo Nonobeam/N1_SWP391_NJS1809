@@ -2,10 +2,7 @@ package com.example.DentistryManagement.controller;
 
 import com.example.DentistryManagement.DTO.UserDTO;
 import com.example.DentistryManagement.Mapping.UserMapping;
-import com.example.DentistryManagement.core.mail.Notification;
 import com.example.DentistryManagement.core.user.Client;
-import com.example.DentistryManagement.core.user.Role;
-import com.example.DentistryManagement.service.AuthenticationService;
 import com.example.DentistryManagement.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -14,23 +11,19 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
 import java.util.Optional;
 
 @RequestMapping("/api/v1/admin")
 @RestController
 @CrossOrigin
 @RequiredArgsConstructor
-@Tag(name = "User API")
+@Tag(name = "Admin API")
 public class AdminController {
     private final UserService userService;
-    private final AuthenticationService authenticationService;
     private final UserMapping userMapping;
+
 
 //    @Operation(summary = "Admin")
 //    @ApiResponses(value = {
@@ -148,6 +141,7 @@ public class AdminController {
 //                    .body("An error occurred while creating the user.");
 //        }
 //    }
+
     @Operation(summary = "Admin")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Successfully"),
@@ -195,8 +189,4 @@ public class AdminController {
                     .body("An error occurred while creating the user.");
         }
     }
-
-
-
-
 }
