@@ -29,8 +29,8 @@ public class JwtService {
         try {
             return extractClaim(token, Claims::getSubject);
         } catch (Exception e) {
-            logger.error("Error while extracting user mail from token: {}", e.getMessage());
-            throw new RuntimeException("Error while extracting user mail from token", e);
+            logger.error("Error while extracting user mail from token: {}"  + token, e.getMessage());
+            throw new RuntimeException("Error while extracting user mail from token: " + token, e);
         }
     }
 

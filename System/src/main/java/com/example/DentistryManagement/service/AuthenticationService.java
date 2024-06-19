@@ -95,13 +95,12 @@ public class AuthenticationService {
             throw new Error("Something went wrong while creating a new user, please check your input field");
         }
 
-        userRepository.save(user);
-
         Dentist dentist = new Dentist();
         dentist.setUser(user);
         dentist.setClinic(clinic);
         dentist.setStaff(staff);
         dentistRepository.save(dentist);
+        userRepository.save(user);
 
         var jwtToken = jwtService.generateToken(user);
 

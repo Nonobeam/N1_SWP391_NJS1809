@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.DentistryManagement.ClinicManagementApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.127 s <<< FAILURE! - in com.example.DentistryManagement.ClinicManagementApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@6979efad testClass = com.example.DentistryManagement.ClinicManagementApplicationTests, locations = [], classes = [com.example.DentistryManagement.DentistryManagementApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@d554c5f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e2829c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3932c79a, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@3aa078fd, org.springframework.boot.test.context.SpringBootTestAnnotation@9f78d278], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+Caused by: java.lang.IllegalStateException: java.lang.NoClassDefFoundError: com/google/cloud/sql/ConnectorRegistry
+Caused by: java.lang.NoClassDefFoundError: com/google/cloud/sql/ConnectorRegistry
+Caused by: java.lang.ClassNotFoundException: com.google.cloud.sql.ConnectorRegistry
+

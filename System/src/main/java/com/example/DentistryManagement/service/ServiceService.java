@@ -41,16 +41,16 @@ public class ServiceService {
         }
     }
 
-    public List<Services> findServicesByClinic(String clinicID) {
-        List<Services> services;
-        Clinic clinic;
-        try {
-            clinic = clinicRepository.findByClinicID(clinicID);
-            services = serviceRepository.findByClinic(clinic);
-
-            return services;
-        } catch (Error error) {
-            throw error;
-        }
-    }
+//    public List<Services> findServicesByClinic(String clinicID) {
+//        List<Services> services;
+//        Clinic clinic;
+//        try {
+//            clinic = clinicRepository.findByClinicID(clinicID);
+//            services = serviceRepository.findByClinic(clinic);
+//
+//            return services;
+//        } catch (Error error) {
+//            throw error;
+//        }
+//    }
 }

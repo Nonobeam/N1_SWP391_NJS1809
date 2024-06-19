@@ -1,0 +1,3 @@
+username,password,expectedStatus
+staff2,staff2,200
+dentist4,dentist4,403

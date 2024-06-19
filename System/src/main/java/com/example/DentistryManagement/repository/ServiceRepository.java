@@ -12,7 +12,7 @@ import java.util.Optional;
 public interface ServiceRepository extends JpaRepository<Services, String> {
 
     Services findByServiceID(String serviceID);
-    List<Services> findByClinic(Clinic clinic);
+//    List<Services> findByClinic(Clinic clinic);
 
 
 }

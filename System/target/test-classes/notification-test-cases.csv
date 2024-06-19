@@ -1,0 +1,3 @@
+username,password,expectedStatus,expectations
+staff2,staff2,200,"$[0].notificationID:4638ed14-b006-484c-8c0a-8054bf137fe0,$[0].message:dentist5,$[1].notificationID:59c83dc1-669c-489b-9f9a-e26894180fad,$[1].message:dentist4"
+wrongmail,password,403,

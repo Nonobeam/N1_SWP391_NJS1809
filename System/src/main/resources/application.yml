@@ -29,6 +29,8 @@ spring:
       sql:
         database-name: DentistryManagementSystem
         instance-connection-name: red-carver-425403-d9:us-central1:dentistrymanagement
+  profiles:
+    active: dev
 
 
 secret_key:

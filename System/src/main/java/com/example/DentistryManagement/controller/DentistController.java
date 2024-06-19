@@ -100,7 +100,7 @@ public class DentistController {
         try {
             if (notification != null){
                 Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-                String mail= authentication.getName();
+                String mail = authentication.getName();
                 Client client = userService.findClientByMail(mail);
                 Dentist dentist = dentistService.findDentistByID(client.getUserID());
                 notification.setDentist(dentist);

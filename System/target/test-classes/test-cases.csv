@@ -1,0 +1,5 @@
+username,password,message,expectedStatus
+dentist1,dentist1,Test Case 1,200
+wrongmail,password,Test Case 2,403
+dentist1,wrongpassword,Test Case 3,403
+string1,string1,Test Case 4,403

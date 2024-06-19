@@ -71,6 +71,7 @@ public class ManagerController {
             AuthenticationResponse response = authenticationService.registerDentist(request, clinic, staff);
             return ResponseEntity.ok(response);
         } catch (Exception e) {
+            logger.info(e.getMessage());
             return ResponseEntity.status(400).body(null);
         }
     }
