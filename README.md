@@ -32,7 +32,7 @@ The Dentistry Booking System is a comprehensive platform designed to streamline 
 
 # TEST WORK FLOW  
 ## Sprint 1
-- Phuc: Send Mail
-- Anh : Create notification
-- Huy: View Notification History
-- Get all Patients
+- Phuc: CM3
+- Anh : CN1
+- Huy: CM1
+- Manh: CM2
