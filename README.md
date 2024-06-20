@@ -19,3 +19,10 @@ The Dentistry Booking System is a comprehensive platform designed to streamline 
 - **Anh Anh** 
 - **Huu Phuc** 
 - **Đức Mạnh** 
+
+# TEST WORK FLOW  
+## Sprint 1
+- Phuc: Send Mail
+- Anh : Create notification
+- Huy: View Notification History
+- Get all Patients
