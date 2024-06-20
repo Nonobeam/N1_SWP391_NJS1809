@@ -1,4 +1,4 @@
 username,password,notificationID,mail,subject,text,expectedErrorMessage,expectedStatus
-staff2,staff2,189a1f05-e24a-4893-8b96-861a319f6234,nguyenhuuthuc0405@gmail.com,string,string,,200
+staff2,staff2,487fbfcd-4669-4a8a-b0a0-a228b7e9e966,nguyenhuuthuc0405@gmail.com,string,string,,200
 dentist4,dentist4,068e3809-d428-4d25-8e26-180e9030b0b8,nguyenhuuthuc0405@gmail.com,string,string,,403
 staff2,staff2,invalid-notification-id,nguyenhuuthuc0405@gmail.com,string,string,Notification not found with ID: invalid-notification-id,400

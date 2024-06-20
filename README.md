@@ -20,6 +20,21 @@ The Dentistry Booking System is a comprehensive platform designed to streamline 
 - **Huu Phuc** 
 - **Đức Mạnh** 
 
+# Use case
+
+| Sprint  | Use Case | Use Case Name                   | Priority |
+|---------|----------|---------------------------------|----------|
+| Sprint 1| UC-08    | Create Mailing Notification     | 5        |
+| Sprint 1| UC-02    | Update User Profile             | 4        |
+| Sprint 2| UC-04    | Booking                         | 4        |
+| Sprint 2| UC-05    | View Appointment History        | 4        |
+| Sprint 3| UC-06    | Create Notification             | 3        |
+| Sprint 3| UC-07    | Update Appointment's Information| 2        |
+| Sprint 4| UC-09    | Assign Role for Staff           | 2        |
+| Sprint 4| UC-01    | Login / Signup                  | 2        |
+| Sprint 5| UC-03    | Forgot Password                 | 1        |
+
+
 # TEST WORK FLOW  
 ## Sprint 1
 - Phuc: Send Mail
