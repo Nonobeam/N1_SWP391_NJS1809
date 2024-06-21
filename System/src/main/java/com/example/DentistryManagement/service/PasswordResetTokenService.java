@@ -19,19 +19,11 @@ public class PasswordResetTokenService {
 
     private final PasswordResetTokenRepository tokenRepository;
     private final JavaMailSender mailSender;
+    private final MailService mailService;
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
     @Value("${spring.mail.username}")
     private String fromMail;
-
-    public void createPasswordResetTokenForUser(Client user, String token) {
-        PasswordResetToken
-                myToken = new PasswordResetToken();
-        myToken.setToken(token);
-        myToken.setUser(user);
-        myToken.setExpiryTime(calculateExpiryDate());
-        tokenRepository.save(myToken);
-    }
 
     public String validatePasswordResetToken(String token) {
         PasswordResetToken passToken = tokenRepository.findByToken(token);
@@ -48,14 +40,19 @@ public class PasswordResetTokenService {
         userRepository.save(user);
         tokenRepository.delete(passToken); // Invalidate the used token
     }
+
+    public void createPasswordResetTokenForUser(Client user, String token) {
+        PasswordResetToken
+                myToken = new PasswordResetToken();
+        myToken.setToken(token);
+        myToken.setUser(user);
+        myToken.setExpiryTime(calculateExpiryDate());
+        tokenRepository.save(myToken);
+    }
+
     public void sendPasswordResetEmail(String mail, String token) {
-        String url = "http://localhost:8080/changePassword/" + token;
-        SimpleMailMessage resetMessage = new SimpleMailMessage();
-        resetMessage.setFrom(fromMail);
-        resetMessage.setSubject("Password Reset Request");
-        resetMessage.setText("To reset your password, click the link below:\n" + url + "\nThis link will expire after 5 minutes");
-        resetMessage.setTo(mail);
-        mailSender.send(resetMessage);
+        String url = "http://localhost:8080/user/changePassword/" + token;
+        mailService.sendSimpleMessage(mail, "Password Reset Request", "To reset your password, click the link below:\n" + url + "\nThis link will expire after 5 minutes");
     }
 
     private LocalDateTime calculateExpiryDate() {

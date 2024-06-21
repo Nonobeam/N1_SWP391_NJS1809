@@ -1,0 +1,3 @@
+email,password,expectedStatus
+test1@example.com,password1,200
+test2@example.com,password2,403

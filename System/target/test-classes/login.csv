@@ -1,0 +1,4 @@
+mail,password,expectedStatus
+staff2,staff2,200
+wrongmail,password,403
+dentist1,wrongpassword,403
