@@ -3,9 +3,9 @@ spring:
 #    url: jdbc:mysql://localhost:3306/mydb
 #    username: myuser
 #    password: mypassword
-    url: jdbc:mysql:///DentistryManagementSystem?cloudSqlInstance=red-carver-425403-d9:us-central1:dentistrymanagement&socketFactory=com.google.cloud.sql.mysql.SocketFactory
+    url: jdbc:mysql://115.73.218.193:3307/swt
     username: root
-    password: Haha123456
+    password: 12345
   jpa:
     hibernate:
       ddl-auto: update

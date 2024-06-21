@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@RequestMapping("/user")
+@RequestMapping("/")
 @RestController
 @RequiredArgsConstructor
 @Tag(name = "User API")
@@ -210,29 +210,6 @@ public class UserController {
         }
     }
 
-//    @Operation(summary = "Delete appointments")
-//    @ApiResponses(value = {
-//            @ApiResponse(responseCode = "200", description = "Successfully"),
-//            @ApiResponse(responseCode = "403", description = "Don't have permission to do this"),
-//            @ApiResponse(responseCode = "404", description = "Not found"),
-//            @ApiResponse(responseCode = "500", description = "Internal Server Error")
-//    })
-////    @PutMapping("/delete-booking/{id}")
-////    public ResponseEntity<Appointment> deleteBooking(@PathVariable String appointmentId) {
-////        try {
-////            Appointment appointment = appointmentService.findAppointmentById(appointmentId);
-////            DentistSchedule dentistSchedule = dentistScheduleService.getByWorkDateAndServiceAndAvailableAndClinic(appointment.getDate()
-////            ,appointment.getServices(),1,appointment.getClinic());
-////            appointment.setStatus(0);
-////
-////
-////        }catch (Error e){
-////            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-////        }catch(Exception e){
-////            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-////        }
-////
-////    }
 
     @PostMapping("/forgotPassword")
     public ResponseEntity<?> forgotPassword(@RequestParam("mail") String mail) {
