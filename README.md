@@ -33,6 +33,6 @@ The Dentistry Booking System is a comprehensive platform designed to streamline 
 # TEST WORK FLOW  
 ## Sprint 1
 - Phuc: UC3, UC5, UC4
-- Anh : UC6, UC26
+- Anh : UC22, UC26
 - Huy: UC11, UC25, UC3
-- Manh: UC22, UC5
+- Manh: UC14, UC5
