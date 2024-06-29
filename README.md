@@ -24,9 +24,9 @@ The Dentistry Booking System is a comprehensive platform designed to streamline 
 
 | Sprint  | Use Cases                            |
 |---------|--------------------------------------|
-| Sprint 1| UC3, UC4, UC6, UC11, UC22, UC5, UC25, UC11, UC14 |
+| Sprint 1| UC3, UC4, UC6, UC11, UC22, UC5, UC26, UC11, UC14 |
 | Sprint 2| UC1, UC2, UC7, UC8, UC9, UC10, UC12, UC13 |
-| Sprint 3| UC26, UC15, UC16, UC17, UC18, UC19, UC20, UC21 |
+| Sprint 3| UC25, UC15, UC16, UC17, UC18, UC19, UC20, UC21 |
 | Sprint 4| UC23, UC24, UC27, UC28, UC29, UC30, UC31, UC32 |            
 
 
